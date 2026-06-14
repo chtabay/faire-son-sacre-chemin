@@ -1,0 +1,7 @@
+# Outillage local Claude Code
+.claude/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

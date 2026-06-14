@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faire son sacré chemin — Week-end résidentiel dans la Drôme</title>
+<meta name="description" content="« Faire son sacré chemin », sur les pas de son héros intérieur. Week-end résidentiel dans la Drôme pour traverser un cap de vie et te reconnecter à ton élan. Coanimé par Julie Zimmermann (Intérêt Sens) et Julien Jeanne.">
+
+<!-- Partage réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Faire son sacré chemin — sur les pas de son héros intérieur">
+<meta property="og:description" content="Week-end résidentiel dans la Drôme pour traverser un cap de vie et te reconnecter à ton élan.">
+<meta property="og:image" content="assets/paysage-mare.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🌿&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sand:#f4ede1;
+    --cream:#fbf7f0;
+    --ink:#33302a;
+    --ink-soft:#5d574d;
+    --terracotta:#bd6a48;
+    --terracotta-dark:#a4583a;
+    --moss:#5d6b4f;
+    --moss-deep:#3f4a37;
+    --gold:#c89b4a;
+    --line:rgba(51,48,42,.12);
+    --shadow:0 18px 50px -22px rgba(63,55,40,.45);
+    --r:18px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Nunito Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.7;
+    font-size:clamp(16px,1.05vw + 13px,18px);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+
+  .wrap{width:min(1080px,92vw);margin-inline:auto}
+  .narrow{width:min(720px,92vw);margin-inline:auto}
+
+  .eyebrow{
+    font-family:"Nunito Sans",sans-serif;
+    text-transform:uppercase;letter-spacing:.28em;
+    font-size:.72rem;font-weight:700;color:var(--terracotta);
+    display:inline-block;margin-bottom:1rem;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:92svh;display:grid;align-items:end;color:#fff;isolation:isolate}
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:-2;
+    background:url("assets/paysage-mare.jpg") center 38%/cover no-repeat;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(180deg,rgba(28,34,30,.28) 0%,rgba(28,34,30,.05) 35%,rgba(28,30,26,.72) 100%);
+  }
+  .hero-inner{padding:clamp(2.4rem,6vw,5rem) 0 clamp(2.8rem,6vw,4.5rem)}
+  .hero .eyebrow{color:#f3d9a8}
+  .hero h1{
+    font-size:clamp(2.5rem,6.2vw,5rem);font-weight:500;
+    text-shadow:0 2px 30px rgba(0,0,0,.35);max-width:16ch;
+  }
+  .hero h1 em{font-style:italic;color:#f6e2bd}
+  .hero .tagline{
+    margin-top:1.2rem;max-width:40ch;font-size:clamp(1.05rem,1.6vw,1.3rem);
+    font-weight:400;text-shadow:0 2px 18px rgba(0,0,0,.4);color:#f3efe6;
+  }
+  .hero-cta{margin-top:1.9rem;display:flex;gap:.9rem;flex-wrap:wrap}
+
+  .btn{
+    --bg:var(--terracotta);--fg:#fff;
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:var(--bg);color:var(--fg);
+    padding:.85em 1.5em;border-radius:999px;
+    font-weight:700;font-size:.98rem;text-decoration:none;
+    border:1.5px solid transparent;
+    transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+    box-shadow:0 10px 24px -12px rgba(0,0,0,.5);
+  }
+  .btn:hover{transform:translateY(-2px);background:var(--terracotta-dark)}
+  .btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.65);box-shadow:none}
+  .btn--ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
+  .btn--lg{padding:1em 1.9em;font-size:1.05rem}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:clamp(3.5rem,8vw,6.5rem) 0}
+  .lead{font-size:clamp(1.15rem,2vw,1.45rem);font-family:"Fraunces",serif;font-weight:400;color:var(--moss-deep);line-height:1.45}
+  .section-title{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:1.4rem}
+  .text-center{text-align:center}
+  p + p{margin-top:1.1rem}
+
+  .invite{background:var(--cream)}
+  .invite p{color:var(--ink-soft)}
+
+  /* Bandeau "appel au changement" */
+  .call{background:var(--moss-deep);color:#f1efe6;text-align:center;position:relative;overflow:hidden}
+  .call::before{
+    content:"";position:absolute;inset:0;opacity:.10;
+    background:radial-gradient(circle at 20% 20%,#fff,transparent 45%),radial-gradient(circle at 85% 70%,var(--gold),transparent 50%);
+  }
+  .call .eyebrow{color:var(--gold)}
+  .call h2{font-size:clamp(1.7rem,3.2vw,2.5rem);max-width:18ch;margin-inline:auto}
+  .call .passages{
+    margin-top:2.2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;
+  }
+  .passages span{
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+    padding:.6em 1.2em;border-radius:999px;font-size:.98rem;font-weight:500;
+    backdrop-filter:blur(2px);
+  }
+  .call .seed{margin-top:2.4rem;font-family:"Fraunces",serif;font-size:clamp(1.15rem,2vw,1.4rem);
+    line-height:1.5;max-width:34ch;margin-inline:auto;color:#fbf7ee}
+
+  /* ---------- LIEU ---------- */
+  .lieu{background:var(--sand)}
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
+  .split .media{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+  .split .media img{width:100%;height:100%;object-fit:cover}
+  .lieu h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:1rem}
+  .lieu p{color:var(--ink-soft)}
+  .lieu .place{font-family:"Fraunces",serif;font-size:1.25rem;color:var(--moss-deep);margin-top:.4rem}
+
+  /* ---------- ANIMATEURS ---------- */
+  .team{background:var(--cream)}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem,3.5vw,2.6rem);margin-top:2.6rem}
+  .person{
+    background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    overflow:hidden;box-shadow:0 14px 40px -26px rgba(63,55,40,.5);
+    display:flex;flex-direction:column;
+  }
+  .person .photo{aspect-ratio:1/1;overflow:hidden;background:var(--sand)}
+  .person .photo img{width:100%;height:100%;object-fit:cover}
+  .person .body{padding:1.5rem 1.6rem 1.8rem}
+  .person h3{font-size:1.5rem;margin-bottom:.15rem}
+  .person .role{color:var(--terracotta);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.8rem}
+  .person p{color:var(--ink-soft);font-size:.98rem}
+
+  /* ---------- INFOS PRATIQUES ---------- */
+  .infos{background:var(--moss);color:#f4f1e8}
+  .infos .section-title{color:#fff}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.2rem;margin-top:2.4rem}
+  .info-card{
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+    border-radius:var(--r);padding:1.5rem 1.4rem;
+  }
+  .info-card .ico{font-size:1.6rem;line-height:1;margin-bottom:.7rem}
+  .info-card h3{font-size:1.05rem;color:#fff;font-family:"Nunito Sans",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.4rem}
+  .info-card p{font-size:1.05rem;color:#f4f1e8}
+
+  .tbd{
+    display:inline-block;background:rgba(255,234,170,.22);
+    border-bottom:2px dotted var(--gold);
+    padding:0 .35em;border-radius:4px;font-style:italic;color:#fbf2dc;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--sand);text-align:center}
+  .contact .section-title{margin-bottom:.6rem}
+  .contact .lead{max-width:30ch;margin:.4rem auto 0;color:var(--ink-soft)}
+  .contact-card{
+    margin:2.6rem auto 0;max-width:560px;background:#fff;
+    border:1px solid var(--line);border-radius:var(--r);
+    box-shadow:var(--shadow);padding:clamp(2rem,5vw,3rem);
+  }
+  .contact-card .who{font-family:"Fraunces",serif;font-size:1.5rem;color:var(--moss-deep)}
+  .contact-card .brand{color:var(--terracotta);font-weight:700;letter-spacing:.04em;margin-bottom:1.8rem}
+  .contact-actions{display:flex;flex-direction:column;gap:.8rem;max-width:340px;margin:0 auto}
+  .contact-actions .btn{justify-content:center;width:100%}
+  .contact-actions .btn--mail{--bg:var(--moss-deep)}
+  .contact-actions .btn--mail:hover{background:#2f3729}
+  .contact-note{margin-top:1.6rem;font-size:.92rem;color:var(--ink-soft)}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--moss-deep);color:#d8d6c9;text-align:center;padding:3rem 0 2.4rem}
+  footer .logo{font-family:"Fraunces",serif;font-size:1.4rem;color:#fff;margin-bottom:.5rem}
+  footer a{color:#f3d9a8;text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  footer .fine{margin-top:1.2rem;font-size:.82rem;color:rgba(216,214,201,.6)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:760px){
+    .split{grid-template-columns:1fr}
+    .split .media{order:-1}
+    .cards{grid-template-columns:1fr}
+    .hero{min-height:88svh}
+    .hero-cta{flex-direction:column;align-items:stretch}
+    .hero-cta .btn{justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-inner wrap">
+    <span class="eyebrow">Week-end résidentiel · Drôme</span>
+    <h1>« Faire son <em>sacré chemin</em> »</h1>
+    <p class="tagline">Sur les pas de son héros intérieur — pour traverser un cap de vie et te reconnecter à ton élan.</p>
+    <div class="hero-cta">
+      <a class="btn btn--lg" href="#contact">Je veux en savoir plus</a>
+      <a class="btn btn--ghost btn--lg" href="#lieu">Découvrir le lieu</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== INVITATION ===================== -->
+<section class="invite">
+  <div class="narrow text-center reveal">
+    <span class="eyebrow">L'invitation</span>
+    <p class="lead">Après une première édition en 2025 riche en profondeur, en rencontres et en transformations, nous vous invitons cette année à vivre une nouvelle traversée, au cœur de vous-même.</p>
+    <p style="margin-top:1.6rem">Un temps suspendu, en pleine nature, pour déposer ce qui pèse, écouter ce qui appelle, et oser un pas vers la vie qui vous ressemble.</p>
+  </div>
+</section>
+
+<!-- ===================== APPEL AU CHANGEMENT ===================== -->
+<section class="call">
+  <div class="narrow reveal" style="position:relative">
+    <span class="eyebrow">Pour qui ?</span>
+    <h2>Il y a des moments dans la vie où quelque chose appelle au changement…</h2>
+    <div class="passages">
+      <span>Un passage à franchir</span>
+      <span>Une peur à traverser</span>
+      <span>Une nouvelle manière d'être à oser</span>
+    </div>
+    <p class="seed">Ce stage est une invitation à semer en soi les graines du renouveau&nbsp;: être accompagné·e pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus vivante, plus alignée avec qui vous êtes.</p>
+  </div>
+</section>
+
+<!-- ===================== LE LIEU ===================== -->
+<section class="lieu" id="lieu">
+  <div class="wrap split reveal">
+    <div class="text">
+      <span class="eyebrow">Le lieu</span>
+      <h2>Au cœur de la Drôme, le gîte du Chant du Loup</h2>
+      <p class="place">Gîtes Le Chant du Loup — Drôme</p>
+      <p style="margin-top:1rem">Un écrin de nature préservée, entre montagnes et grands espaces, propice au ressourcement et à la traversée intérieure. Une mare naturelle, le silence, la lumière&nbsp;: tout y invite à ralentir.</p>
+      <p style="margin-top:1.4rem">
+        <a class="btn" href="https://gites-lechantduloup.com" target="_blank" rel="noopener">Visiter le gîte ↗</a>
+      </p>
+    </div>
+    <div class="media">
+      <img src="assets/paysage-mare.jpg" alt="La mare naturelle du gîte Le Chant du Loup, avec vue sur les montagnes de la Drôme" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ANIMATEURS ===================== -->
+<section class="team">
+  <div class="wrap text-center reveal">
+    <span class="eyebrow">Qui vous accompagne</span>
+    <h2 class="section-title">Celles et ceux qui tiennent le cap avec vous</h2>
+  </div>
+  <div class="wrap cards">
+    <article class="person reveal">
+      <div class="photo"><img src="assets/Julie.jpg" alt="Julie Zimmermann" loading="lazy"></div>
+      <div class="body">
+        <h3>Julie Zimmermann</h3>
+        <div class="role">Intérêt Sens · Accompagnante</div>
+        <p>Passionnée par le cheminement intérieur et l'élan de vie, Julie crée des espaces de confiance pour traverser les caps et révéler ce qui demande à naître en chacun·e.</p>
+      </div>
+    </article>
+    <article class="person reveal">
+      <div class="photo"><img src="assets/julien-fils.jpg" alt="Julien Jeanne" loading="lazy"></div>
+      <div class="body">
+        <h3>Julien Jeanne</h3>
+        <div class="role">Artiste chorégraphique · Artisan du vivant</div>
+        <p>Ami de longue date et passionné de transmission, Julien met le mouvement, le corps et le vivant au service de la transformation. 🌿</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== INFOS PRATIQUES ===================== -->
+<section class="infos">
+  <div class="wrap text-center reveal">
+    <span class="eyebrow" style="color:#f3d9a8">Infos pratiques</span>
+    <h2 class="section-title">L'essentiel en un coup d'œil</h2>
+  </div>
+  <div class="wrap info-grid reveal">
+    <div class="info-card">
+      <div class="ico">📅</div>
+      <h3>Dates</h3>
+      <p><span class="tbd">à compléter</span></p>
+    </div>
+    <div class="info-card">
+      <div class="ico">📍</div>
+      <h3>Lieu</h3>
+      <p>Gîte Le Chant du Loup — Drôme</p>
+    </div>
+    <div class="info-card">
+      <div class="ico">🛏️</div>
+      <h3>Format</h3>
+      <p>Week-end résidentiel<br>(hébergement &amp; repas)</p>
+    </div>
+    <div class="info-card">
+      <div class="ico">💛</div>
+      <h3>Tarif</h3>
+      <p><span class="tbd">à compléter</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="narrow reveal">
+    <span class="eyebrow">Vous embarquez ?</span>
+    <h2 class="section-title">Réserver votre place</h2>
+    <p class="lead">Pas de formulaire&nbsp;: pour préserver le lien et répondre à vos questions, contactez Julie directement. Le téléphone reste le plus simple.</p>
+
+    <div class="contact-card">
+      <div class="who">Julie Zimmermann</div>
+      <div class="brand">Intérêt Sens</div>
+      <div class="contact-actions">
+        <a class="btn btn--lg" href="tel:+33000000000">📞 Appeler Julie — <span class="tbd">numéro à compléter</span></a>
+        <a class="btn btn--mail btn--lg" href="mailto:adresse@interetsens.fr?subject=Stage%20Faire%20son%20sacr%C3%A9%20chemin">✉️ Écrire à Julie — <span class="tbd">mail à compléter</span></a>
+      </div>
+      <p class="contact-note">Places limitées — au plaisir de cheminer ensemble.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="logo">🌿 Intérêt Sens</div>
+    <p>« Faire son sacré chemin » — sur les pas de son héros intérieur</p>
+    <p style="margin-top:.4rem"><a href="https://gites-lechantduloup.com" target="_blank" rel="noopener">Gîte Le Chant du Loup</a> · Drôme</p>
+    <p class="fine">Coanimé par Julie Zimmermann &amp; Julien Jeanne · Édition 2026</p>
+  </div>
+</footer>
+
+<script>
+  // Apparition douce au scroll
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
