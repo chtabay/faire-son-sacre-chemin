@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faire son sacré chemin — Week-end résidentiel dans la Drôme</title>
-<meta name="description" content="« Faire son sacré chemin », sur les pas de son héros intérieur. Week-end résidentiel dans la Drôme pour traverser un cap de vie et te reconnecter à ton élan. Coanimé par Julie Zimmermann (Intérêt Sens) et Julien Jeanne.">
+<title>Faire son sacré chemin — 18-20 septembre 2026, Drôme</title>
+<meta name="description" content="« Faire son sacré chemin », sur les pas de son héros intérieur. Week-end résidentiel du 18 au 20 septembre 2026 près de Die, dans la Drôme, pour traverser un cap de vie et te reconnecter à ton élan. Coanimé par Julie Zimmermann (Intérêt Sens) et Julien Jeanne.">
 
 <!-- Partage réseaux sociaux -->
 <meta property="og:type" content="website">
@@ -127,6 +127,19 @@
   .call .seed{margin-top:2.4rem;font-family:"Fraunces",serif;font-size:clamp(1.15rem,2vw,1.4rem);
     line-height:1.5;max-width:34ch;margin-inline:auto;color:#fbf7ee}
 
+  /* ---------- PROGRAMME ---------- */
+  .programme{background:var(--cream)}
+  .prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);margin-top:2.6rem;align-items:start}
+  .prog-col h3{font-family:"Fraunces",serif;font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--moss-deep);margin-bottom:1.2rem}
+  .prog-list{list-style:none;display:flex;flex-direction:column;gap:.85rem}
+  .prog-list li{
+    display:flex;gap:.85rem;align-items:flex-start;
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:.95rem 1.15rem;box-shadow:0 12px 32px -26px rgba(63,55,40,.55);
+  }
+  .prog-list .e{font-size:1.35rem;line-height:1.3;flex:none}
+  .prog-closing{margin:2.8rem auto 0;max-width:52ch;text-align:center;color:var(--ink-soft)}
+
   /* ---------- LIEU ---------- */
   .lieu{background:var(--sand)}
   .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
@@ -214,7 +227,7 @@
 <!-- ===================== HERO ===================== -->
 <header class="hero">
   <div class="hero-inner wrap">
-    <span class="eyebrow">Week-end résidentiel · Drôme</span>
+    <span class="eyebrow">Week-end résidentiel · 18-20 septembre 2026 · Drôme</span>
     <h1>« Faire son <em>sacré chemin</em> »</h1>
     <p class="tagline">Sur les pas de son héros intérieur — pour traverser un cap de vie et te reconnecter à ton élan.</p>
     <div class="hero-cta">
@@ -243,8 +256,38 @@
       <span>Une peur à traverser</span>
       <span>Une nouvelle manière d'être à oser</span>
     </div>
-    <p class="seed">Ce stage est une invitation à semer en soi les graines du renouveau&nbsp;: être accompagné·e pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus vivante, plus alignée avec qui vous êtes.</p>
+    <p class="seed">Ce stage est une invitation à semer en soi les graines du renouveau&nbsp;: être accompagné·e pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus authentique, plus libre et plus vivante.</p>
   </div>
+</section>
+
+<!-- ===================== PROGRAMME ===================== -->
+<section class="programme">
+  <div class="wrap text-center reveal">
+    <span class="eyebrow">Pendant ce week-end</span>
+    <h2 class="section-title">Un chemin à vivre, ensemble</h2>
+  </div>
+  <div class="wrap prog-grid reveal">
+    <div class="prog-col">
+      <h3>Nous vous proposons de…</h3>
+      <ul class="prog-list">
+        <li><span class="e">🌀</span><span>Mettre de la clarté sur ce qui cherche à émerger en vous</span></li>
+        <li><span class="e">🔥</span><span>Oser traverser les freins, les peurs ou les doutes du moment</span></li>
+        <li><span class="e">🌱</span><span>Vivre de nouvelles expériences pour ouvrir d'autres possibles</span></li>
+        <li><span class="e">🌟</span><span>Retrouver votre élan et prendre votre juste place</span></li>
+        <li><span class="e">✨</span><span>Poser des pas concrets vers une vie plus alignée</span></li>
+      </ul>
+    </div>
+    <div class="prog-col">
+      <h3>À travers…</h3>
+      <ul class="prog-list">
+        <li><span class="e">🎨</span><span>Ateliers expérientiels et accompagnement en mouvement</span></li>
+        <li><span class="e">🗣️</span><span>Cercles de parole, temps de partage, chants et danse</span></li>
+        <li><span class="e">🎭</span><span>Approches créatives, sensibles et corporelles</span></li>
+        <li><span class="e">🧘</span><span>Temps de présence, d'intégration et de ressourcement</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="prog-closing lead narrow reveal">Un espace soutenant, vivant et profondément humain pour ralentir, ressentir, déposer… et repartir avec plus de confiance, de vérité et d'élan.</p>
 </section>
 
 <!-- ===================== LE LIEU ===================== -->
@@ -252,9 +295,9 @@
   <div class="wrap split reveal">
     <div class="text">
       <span class="eyebrow">Le lieu</span>
-      <h2>Au cœur de la Drôme, le gîte du Chant du Loup</h2>
-      <p class="place">Gîtes Le Chant du Loup — Drôme</p>
-      <p style="margin-top:1rem">Un écrin de nature préservée, entre montagnes et grands espaces, propice au ressourcement et à la traversée intérieure. Une mare naturelle, le silence, la lumière&nbsp;: tout y invite à ralentir.</p>
+      <h2>Un écrin de verdure près de Die, dans la Drôme</h2>
+      <p class="place">Gîte Le Chant du Loup — près de Die (Drôme)</p>
+      <p style="margin-top:1rem">En résidentiel, au cœur d'une nature préservée, entre montagnes et grands espaces, propice au ressourcement et à la traversée intérieure. Une mare naturelle, le silence, la lumière&nbsp;: tout y invite à ralentir.</p>
       <p style="margin-top:1.4rem">
         <a class="btn" href="https://gites-lechantduloup.com" target="_blank" rel="noopener">Visiter le gîte ↗</a>
       </p>
@@ -300,23 +343,23 @@
   <div class="wrap info-grid reveal">
     <div class="info-card">
       <div class="ico">📅</div>
-      <h3>Dates</h3>
-      <p><span class="tbd">à compléter</span></p>
+      <h3>Quand</h3>
+      <p>Ven. 18 → dim. 20 septembre 2026<br><span style="opacity:.85;font-size:.92rem">Arrivée le vendredi dès 14h</span></p>
     </div>
     <div class="info-card">
       <div class="ico">📍</div>
-      <h3>Lieu</h3>
-      <p>Gîte Le Chant du Loup — Drôme</p>
+      <h3>Où</h3>
+      <p>Près de Die, dans la Drôme<br><span style="opacity:.85;font-size:.92rem">Gîte Le Chant du Loup</span></p>
     </div>
     <div class="info-card">
       <div class="ico">🛏️</div>
       <h3>Format</h3>
-      <p>Week-end résidentiel<br>(hébergement &amp; repas)</p>
+      <p>Week-end résidentiel<br><span style="opacity:.85;font-size:.92rem">hébergement &amp; repas sur place</span></p>
     </div>
     <div class="info-card">
       <div class="ico">💛</div>
       <h3>Tarif</h3>
-      <p><span class="tbd">à compléter</span></p>
+      <p>Sur demande<br><span style="opacity:.85;font-size:.92rem">précisé lors du contact</span></p>
     </div>
   </div>
 </section>
@@ -324,7 +367,7 @@
 <!-- ===================== CONTACT ===================== -->
 <section class="contact" id="contact">
   <div class="narrow reveal">
-    <span class="eyebrow">Vous embarquez ?</span>
+    <span class="eyebrow">Si cet appel résonne en vous</span>
     <h2 class="section-title">Réserver votre place</h2>
     <p class="lead">Pas de formulaire&nbsp;: pour préserver le lien et répondre à vos questions, contactez Julie directement. Le téléphone reste le plus simple.</p>
 
@@ -332,10 +375,10 @@
       <div class="who">Julie Zimmermann</div>
       <div class="brand">Intérêt Sens</div>
       <div class="contact-actions">
-        <a class="btn btn--lg" href="tel:+33000000000">📞 Appeler Julie — <span class="tbd">numéro à compléter</span></a>
-        <a class="btn btn--mail btn--lg" href="mailto:adresse@interetsens.fr?subject=Stage%20Faire%20son%20sacr%C3%A9%20chemin">✉️ Écrire à Julie — <span class="tbd">mail à compléter</span></a>
+        <a class="btn btn--lg" href="tel:+33633812462">📞 06 33 81 24 62</a>
+        <a class="btn btn--mail btn--lg" href="mailto:julie.zimmermann@interetsens.com?subject=Stage%20%C2%AB%20Faire%20son%20sacr%C3%A9%20chemin%20%C2%BB%20-%20septembre%202026">✉️ julie.zimmermann@interetsens.com</a>
       </div>
-      <p class="contact-note">Places limitées — au plaisir de cheminer ensemble.</p>
+      <p class="contact-note">Contactez-moi pour en savoir plus. 🙏 N'hésitez pas à partager autour de vous.<br><span style="font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:var(--moss-deep)">Je vous embrasse, Julie.</span></p>
     </div>
   </div>
 </section>
@@ -346,7 +389,7 @@
     <div class="logo">🌿 Intérêt Sens</div>
     <p>« Faire son sacré chemin » — sur les pas de son héros intérieur</p>
     <p style="margin-top:.4rem"><a href="https://gites-lechantduloup.com" target="_blank" rel="noopener">Gîte Le Chant du Loup</a> · Drôme</p>
-    <p class="fine">Coanimé par Julie Zimmermann &amp; Julien Jeanne · Édition 2026</p>
+    <p class="fine">Coanimé par Julie Zimmermann &amp; Julien Jeanne · 18-20 septembre 2026</p>
   </div>
 </footer>
 
