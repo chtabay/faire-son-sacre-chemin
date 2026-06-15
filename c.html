@@ -177,15 +177,7 @@
   .contact .host .n { font-size: 15px; color: #FBF6EC; font-weight: 600; }
   .contact .host .r { display: block; font-size: 12px; color: #C9BCA3; font-weight: 400; }
 
-  /* Sélecteur de versions (non publié) */
-  .vbadge {
-    position: fixed; right: 14px; bottom: 14px; z-index: 200;
-    display: inline-flex; align-items: center; gap: 10px;
-    background: var(--ink); color: #fff; text-decoration: none;
-    font-family: var(--sans); font-size: 13px; font-weight: 600;
-    padding: 9px 15px; border-radius: 100px; box-shadow: var(--shadow-soft); opacity: .92;
-  }
-  .vbadge a { color: #F6C98A; text-decoration: none; }
+  /* (le sélecteur de version .vswitch est défini dans site.css) */
 
   @media (max-width: 760px) {
     .heroC .hero-foot { flex-direction: column; align-items: stretch; }
@@ -428,7 +420,12 @@
   </div>
 </footer>
 
-<div class="vbadge">Version C · <a href="index.html">A</a> · <a href="b.html">B</a></div>
+<nav class="vswitch" aria-label="Versions de la page">
+  <span class="lbl">Version</span>
+  <a href="index.html" title="A — aérée &amp; éditoriale">A</a>
+  <a href="b.html" title="B — dense &amp; directe">B</a>
+  <a href="c.html" aria-current="page" title="C — DA affiche">C</a>
+</nav>
 
 <script>
   const io = new IntersectionObserver((entries) => {

@@ -114,15 +114,7 @@
   .lite-head h2 { font-size: clamp(28px, 4vw, 46px); }
   .lite-head .tag { font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
 
-  /* Sélecteur de version (comparaison A/B) — non publié */
-  .vbadge {
-    position: fixed; right: 14px; bottom: 14px; z-index: 200;
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--ink); color: #fff; text-decoration: none;
-    font-family: var(--sans); font-size: 13px; font-weight: 600;
-    padding: 9px 14px; border-radius: 100px; box-shadow: var(--shadow-soft); opacity: .9;
-  }
-  .vbadge:hover { opacity: 1; }
+  /* (le sélecteur de version .vswitch est défini dans site.css) */
 
   @media (max-width: 720px) {
     .weekend .two-col { grid-template-columns: 1fr; gap: 8px 0; }
@@ -364,7 +356,12 @@
   </div>
 </footer>
 
-<a class="vbadge" href="index.html" title="Comparer avec la version actuelle">↔ Version A (actuelle)</a>
+<nav class="vswitch" aria-label="Versions de la page">
+  <span class="lbl">Version</span>
+  <a href="index.html" title="A — aérée &amp; éditoriale">A</a>
+  <a href="b.html" aria-current="page" title="B — dense &amp; directe">B</a>
+  <a href="c.html" title="C — DA affiche">C</a>
+</nav>
 
 <script>
   const io = new IntersectionObserver((entries) => {
