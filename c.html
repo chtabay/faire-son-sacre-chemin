@@ -123,6 +123,48 @@
     font-size: clamp(20px, 2.4vw, 29px); line-height: 1.42; color: var(--forest); max-width: 34ch;
   }
 
+  /* ---- Cadres par sujet (texte de Julie découpé en cartes) ---- */
+  .stage .cadres { display: flex; flex-direction: column; gap: clamp(16px, 2.2vw, 26px); margin-top: 4px; }
+  .cadre {
+    position: relative; background: var(--paper); border: 1px solid var(--line);
+    border-radius: 18px; box-shadow: var(--shadow-card); padding: clamp(22px, 3vw, 34px);
+  }
+  .cadre .head { display: flex; align-items: center; gap: 11px; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .cadre .head .cic { width: 24px; height: 24px; flex: none; }
+  .cadre .head .cic svg { width: 100%; height: 100%; }
+  .cadre .head .lab { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+  .cadre .head .star { color: var(--gold); font-size: 19px; line-height: 1; }
+  .cadre p { color: var(--ink-2); max-width: 64ch; margin: 0 0 14px; }
+  .cadre p:last-child { margin-bottom: 0; }
+  .cadre .coanim { font-family: var(--serif); font-size: clamp(18px, 2vw, 23px); line-height: 1.42; color: var(--forest); max-width: 42ch; }
+  .cadre .coanim strong { color: var(--ink); font-weight: 600; }
+  .cadre .exergue { font-family: var(--serif); font-style: italic; font-size: clamp(19px, 2.2vw, 26px); line-height: 1.4; color: var(--forest); max-width: 30ch; }
+
+  .cadre--appel { background: linear-gradient(0deg, rgba(196,150,96,.06), rgba(196,150,96,.06)), var(--paper); border-left: 3px solid var(--gold); }
+
+  .cadre--cloture .filet { width: 42px; height: 3px; background: var(--gold); border-radius: 2px; margin: 0 0 16px; }
+  .cadre--cloture .closing { margin: 0; }
+
+  /* listes des points (sans emoji, marqueurs accent) */
+  .cadre .two { margin: 0; }
+  .cadre ul.pts { list-style: none; margin: 0; padding: 0; }
+  .cadre ul.pts li {
+    display: grid; grid-template-columns: 18px 1fr; gap: 11px; align-items: start;
+    padding: 9px 0; border-bottom: 1px solid var(--line-soft); font-size: 16px; color: var(--ink); line-height: 1.42;
+  }
+  .cadre ul.pts li:last-child { border-bottom: none; }
+  .cadre ul.pts li .m { color: var(--accent); font-weight: 700; line-height: 1.5; }
+
+  /* repère Quand / Où */
+  .cadre--repere .rrow { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; }
+  .cadre--repere .rrow + .rrow { border-top: 1px solid var(--line-soft); }
+  .cadre--repere .ic { width: 22px; height: 22px; flex: none; margin-top: 1px; }
+  .cadre--repere .ic svg { width: 100%; height: 100%; }
+  .cadre--repere .ic.cal { color: #C2683B; }
+  .cadre--repere .ic.loc { color: #6C7B4C; }
+  .cadre--repere .lab2 { display: block; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+  .cadre--repere .v { color: var(--ink); font-size: 15.5px; line-height: 1.4; }
+
   /* Headers allégés */
   .lite-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; }
   .lite-head h2 { font-family: 'Cinzel', var(--serif); font-size: clamp(26px, 3.6vw, 42px); text-transform: uppercase; letter-spacing: .01em; }
@@ -241,38 +283,87 @@
   <div class="wrap">
     <div class="lite-head reveal">
       <h2>Le stage</h2>
-      <span class="tag">L'invitation</span>
+      <span class="tag">Le programme</span>
     </div>
 
-    <p class="coanim reveal">Coanimé avec <strong>Julien Jeanne</strong>, ami de long date, artiste chorégraphique, artisan du vivant et passionné de transmission 🌿</p>
+    <div class="cadres">
 
-    <p class="reveal">Après une première édition en 2025 riche en profondeur, en rencontres et en transformations, nous vous invitons cette année à vivre une nouvelle traversée, au cœur de vous-même.</p>
-    <p class="appel reveal">Il y a des moments dans la vie où quelque chose appelle au changement… Un passage à franchir. Une peur à traverser. Une nouvelle manière d'être à oser.</p>
-    <p class="reveal">Ce stage est une invitation à semer en soi les graines du renouveau, à être accompagné(e) pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus authentique, plus libre et plus vivante.</p>
+      <!-- Cadre 1 — L'invitation -->
+      <article class="cadre reveal">
+        <div class="head">
+          <span class="cic" style="color:#6C7B4C" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c5-1 8-5 8-10 0-2-1-4-3-4-1.5 0-2.5 1-3 2.5C13 7 12 3 9 3 6.5 3 5 5 5 7.5 5 13 8 18 12 21z"></path></svg></span>
+          <span class="lab">L'invitation</span>
+        </div>
+        <p class="coanim">Coanimé avec <strong>Julien Jeanne</strong> ami de long date, artiste chorégraphique, artisan du vivant et passionné de transmission</p>
+        <p>Après une première édition en 2025 riche en profondeur, en rencontres et en transformations, nous vous invitons cette année à vivre une nouvelle traversée, au cœur de vous-même.</p>
+      </article>
 
-    <div class="two reveal">
-      <div>
-        <p class="mini">Pendant ce WE, nous vous proposons de :</p>
-        <ul class="julie">
-          <li><span class="e" aria-hidden="true">🌀</span><span>Mettre de la clarté sur ce qui cherche à émerger en vous</span></li>
-          <li><span class="e" aria-hidden="true">🔥</span><span>Oser traverser les freins, les peurs ou les doutes du moment</span></li>
-          <li><span class="e" aria-hidden="true">🌱</span><span>Vivre de nouvelles expériences pour ouvrir d'autres possibles</span></li>
-          <li><span class="e" aria-hidden="true">🌟</span><span>Retrouver votre élan et prendre votre juste place</span></li>
-          <li><span class="e" aria-hidden="true">✨</span><span>Poser des pas concrets vers une vie plus alignée</span></li>
-        </ul>
-      </div>
-      <div>
-        <p class="mini">À travers :</p>
-        <ul class="julie">
-          <li><span class="e" aria-hidden="true">🎨</span><span>Ateliers expérientiels et accompagnement en mouvement</span></li>
-          <li><span class="e" aria-hidden="true">🗣️</span><span>Cercles de parole, temps de partage, chants et danse</span></li>
-          <li><span class="e" aria-hidden="true">🎭</span><span>Approches créatives, sensibles et corporelles</span></li>
-          <li><span class="e" aria-hidden="true">🧘‍♂️</span><span>Temps de présence, d'intégration et de ressourcement</span></li>
-        </ul>
-      </div>
+      <!-- Cadre 2 — L'appel au changement -->
+      <article class="cadre cadre--appel reveal">
+        <div class="head">
+          <span class="cic" style="color:#4E7E86" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l1.8 5.7 5.7 1.8-5.7 1.8L12 17.5l-1.8-5.7L4.5 10l5.7-1.8z"></path></svg></span>
+          <span class="lab">L'appel au changement</span>
+        </div>
+        <p class="exergue">Il y a des moments dans la vie où quelque chose appelle au changement… Un passage à franchir. Une peur à traverser. Une nouvelle manière d'être à oser.</p>
+        <p>Ce stage est une invitation à semer en soi les graines du renouveau, à être accompagné(e) pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus authentique, plus libre et plus vivante.</p>
+      </article>
+
+      <!-- Cadre 3 — Quand & Où -->
+      <article class="cadre cadre--repere reveal">
+        <div class="head">
+          <span class="cic" style="color:#C2683B" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 3v4M16 3v4"></path></svg></span>
+          <span class="lab">Quand &amp; où</span>
+        </div>
+        <div class="rrow">
+          <span class="ic cal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 3v4M16 3v4"></path></svg></span>
+          <span><span class="lab2">Quand</span><span class="v">vendredi 18 (arrivée à 14h pour profiter de ce beau lieu) au dimanche 20 septembre 2026</span></span>
+        </div>
+        <div class="rrow">
+          <span class="ic loc" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+          <span><span class="lab2">Où</span><span class="v">en résidentiel, dans un écrin de verdure près de Die, dans la Drôme</span></span>
+        </div>
+      </article>
+
+      <!-- Cadre 4 — Le déroulé du week-end -->
+      <article class="cadre reveal">
+        <div class="head">
+          <span class="cic" style="color:#BE8A3C" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c0-2 1.6-3.6 3.6-3.6S19 10 19 12.4 16.8 16 14 16s-5-2.2-5-5 2.4-5.6 5.6-5.6S21 7.8 21 11.6"></path><path d="M12 12c0 1.4-1.1 2.5-2.6 2.5S7 13.4 7 11.8 8.4 9 10 9"></path></svg></span>
+          <span class="lab">Le déroulé du week-end</span>
+        </div>
+        <div class="two">
+          <div>
+            <p class="mini">Pendant ce WE, nous vous proposons de :</p>
+            <ul class="pts">
+              <li><span class="m" aria-hidden="true">→</span><span>Mettre de la clarté sur ce qui cherche à émerger en vous</span></li>
+              <li><span class="m" aria-hidden="true">→</span><span>Oser traverser les freins, les peurs ou les doutes du moment</span></li>
+              <li><span class="m" aria-hidden="true">→</span><span>Vivre de nouvelles expériences pour ouvrir d'autres possibles</span></li>
+              <li><span class="m" aria-hidden="true">→</span><span>Retrouver votre élan et prendre votre juste place</span></li>
+              <li><span class="m" aria-hidden="true">→</span><span>Poser des pas concrets vers une vie plus alignée</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="mini">À travers :</p>
+            <ul class="pts">
+              <li><span class="m" aria-hidden="true">·</span><span>Ateliers expérientiels et accompagnement en mouvement</span></li>
+              <li><span class="m" aria-hidden="true">·</span><span>Cercles de parole, temps de partage, chants et danse</span></li>
+              <li><span class="m" aria-hidden="true">·</span><span>Approches créatives, sensibles et corporelles</span></li>
+              <li><span class="m" aria-hidden="true">·</span><span>Temps de présence, d'intégration et de ressourcement</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cadre 5 — L'esprit du lieu -->
+      <article class="cadre cadre--cloture reveal">
+        <div class="head">
+          <span class="star" aria-hidden="true">★</span>
+          <span class="lab">L'esprit du lieu</span>
+        </div>
+        <div class="filet" aria-hidden="true"></div>
+        <p class="closing">Un espace soutenant, vivant et profondément humain pour ralentir, ressentir, déposer… et repartir avec plus de confiance, de vérité et d'élan.</p>
+      </article>
+
     </div>
-
-    <p class="closing reveal">Un espace soutenant, vivant et profondément humain pour ralentir, ressentir, déposer… et repartir avec plus de confiance, de vérité et d'élan.</p>
   </div>
 </section>
 
