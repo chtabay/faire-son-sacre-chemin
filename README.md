@@ -28,7 +28,7 @@ assets/
 
 ## ✏️ À compléter / valider
 
-- **Tarif** : actuellement « communiqué sur demande » (aucun montant fourni).
+- **Tarif** : aucune mention de prix sur la page (retiré à la demande de Julie) — communiqué de vive voix au contact.
 - **Formulaire de contact** : la maquette inclut un petit formulaire qui ouvre la messagerie
   pré-remplie (contact direct, sans serveur). Julie avait évoqué « pas de formulaire » :
   il se retire facilement si elle préfère ne garder que le téléphone &amp; l'e-mail.
