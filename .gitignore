@@ -5,6 +5,9 @@
 interetsens/
 .design/
 
+# Sources non destinées au web (HEIC non lisible par les navigateurs ; converti en .jpg)
+*.heic
+
 # OS
 Thumbs.db
 .DS_Store
