@@ -1,6 +1,10 @@
 # Outillage local Claude Code
 .claude/
 
+# Maquette de référence Claude Design (ne pas publier sur Pages — bundle volumineux)
+interetsens/
+.design/
+
 # OS
 Thumbs.db
 .DS_Store

@@ -1,37 +1,41 @@
-# Faire son sacré chemin 🌿
+# Faire son sacré chemin 🌿 — INTER &amp; SENS
 
-Page de présentation du week-end résidentiel **« Faire son sacré chemin » — sur les pas de son héros intérieur**, dans la Drôme (gîte Le Chant du Loup).
+Page de présentation du week-end résidentiel **« Faire son sacré chemin » — sur les pas de son héros intérieur**, du **18 au 20 septembre 2026** au gîte Le Chant du Loup, près de Die (Drôme).
 
-Coanimé par **Julie Zimmermann** (Intérêt Sens) & **Julien Jeanne**.
+Coanimé par **Julie Zimmermann** (Inter &amp; Sens) &amp; **Julien Jeanne**.
 
 ## 🌐 Site en ligne
 
-Publié via **GitHub Pages** : voir l'onglet *Settings → Pages* du dépôt pour l'URL.
+Publié via **GitHub Pages** : https://chtabay.github.io/faire-son-sacre-chemin/
 
-## 🗂️ Structure
+## 🎨 Design
+
+Mise en page alignée sur la maquette « **Sentier** » validée dans Claude Design
+(palette nature chaleureuse + accent orange Inter &amp; Sens, typographies Playfair Display / Cormorant / Inter).
 
 ```
-index.html        → la page (HTML + CSS autonomes, aucune étape de build)
-assets/           → photos d'illustration
-  paysage-mare.jpg  → photo principale (la mare, vue sur la Drôme)
-  Julie.jpg         → portrait de Julie Zimmermann
-  julien-fils.jpg   → photo de Julien Jeanne
+index.html        → la page (hero « Sentier »)
+site.css          → design system (couleurs, typo, composants)
+assets/
+  paysage-mare.jpg    → photo principale (la mare, vue sur la Drôme)
+  julie-portrait.jpg  → portrait de Julie Zimmermann
+  julien-fils.jpg     → photo de Julien Jeanne
+  logo-intersens.png  → logo Inter & Sens
 ```
 
-## ✏️ À compléter
+> Le dossier `interetsens/` (maquette d'origine exportée de Claude Design) n'est **pas** versionné
+> ni publié — il sert uniquement de référence locale.
 
-Quelques informations restent en attente dans `index.html` (repérables par le mot `à compléter` / la classe CSS `.tbd`) :
+## ✏️ À compléter / valider
 
-- **Dates** du week-end
-- **Tarif**
-- **Téléphone** de Julie (lien `tel:` dans la section Contact)
-- **E-mail** de Julie (lien `mailto:` dans la section Contact)
+- **Tarif** : actuellement « communiqué sur demande » (aucun montant fourni).
+- **Formulaire de contact** : la maquette inclut un petit formulaire qui ouvre la messagerie
+  pré-remplie (contact direct, sans serveur). Julie avait évoqué « pas de formulaire » :
+  il se retire facilement si elle préfère ne garder que le téléphone &amp; l'e-mail.
+- **Portrait solo de Julien** en `.jpg` si Julie en a un (actuellement : photo avec son fils).
 
 ## 🛠️ Aperçu en local
 
-Ouvrir `index.html` directement dans un navigateur, ou servir le dossier :
-
 ```bash
-python -m http.server 4321
-# puis ouvrir http://localhost:4321
+python -m http.server 4321   # puis http://localhost:4321
 ```

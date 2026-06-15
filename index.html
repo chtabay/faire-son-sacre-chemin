@@ -3,426 +3,331 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faire son sacré chemin — 18-20 septembre 2026, Drôme</title>
-<meta name="description" content="« Faire son sacré chemin », sur les pas de son héros intérieur. Week-end résidentiel du 18 au 20 septembre 2026 près de Die, dans la Drôme, pour traverser un cap de vie et te reconnecter à ton élan. Coanimé par Julie Zimmermann (Intérêt Sens) et Julien Jeanne.">
+<title>Faire son sacré chemin — Stage · Drôme · Septembre 2026 · INTER &amp; SENS</title>
+<meta name="description" content="Week-end résidentiel dans la Drôme, du 18 au 20 septembre 2026, pour traverser un cap de vie et se reconnecter à son élan. Coanimé par Julie Zimmermann &amp; Julien Jeanne.">
 
 <!-- Partage réseaux sociaux -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Faire son sacré chemin — sur les pas de son héros intérieur">
-<meta property="og:description" content="Week-end résidentiel dans la Drôme pour traverser un cap de vie et te reconnecter à ton élan.">
+<meta property="og:description" content="Week-end résidentiel dans la Drôme, du 18 au 20 septembre 2026. Coanimé par Julie Zimmermann &amp; Julien Jeanne.">
 <meta property="og:image" content="assets/paysage-mare.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🌿&lt;/text&gt;&lt;/svg&gt;">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-  :root{
-    --sand:#f4ede1;
-    --cream:#fbf7f0;
-    --ink:#33302a;
-    --ink-soft:#5d574d;
-    --terracotta:#bd6a48;
-    --terracotta-dark:#a4583a;
-    --moss:#5d6b4f;
-    --moss-deep:#3f4a37;
-    --gold:#c89b4a;
-    --line:rgba(51,48,42,.12);
-    --shadow:0 18px 50px -22px rgba(63,55,40,.45);
-    --r:18px;
-  }
-
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Nunito Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    color:var(--ink);
-    background:var(--cream);
-    line-height:1.7;
-    font-size:clamp(16px,1.05vw + 13px,18px);
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
-  a{color:inherit}
-  img{display:block;max-width:100%}
-
-  .wrap{width:min(1080px,92vw);margin-inline:auto}
-  .narrow{width:min(720px,92vw);margin-inline:auto}
-
-  .eyebrow{
-    font-family:"Nunito Sans",sans-serif;
-    text-transform:uppercase;letter-spacing:.28em;
-    font-size:.72rem;font-weight:700;color:var(--terracotta);
-    display:inline-block;margin-bottom:1rem;
-  }
-
-  /* ---------- HERO ---------- */
-  .hero{position:relative;min-height:92svh;display:grid;align-items:end;color:#fff;isolation:isolate}
-  .hero::before{
-    content:"";position:absolute;inset:0;z-index:-2;
-    background:url("assets/paysage-mare.jpg") center 38%/cover no-repeat;
-  }
-  .hero::after{
-    content:"";position:absolute;inset:0;z-index:-1;
-    background:linear-gradient(180deg,rgba(28,34,30,.28) 0%,rgba(28,34,30,.05) 35%,rgba(28,30,26,.72) 100%);
-  }
-  .hero-inner{padding:clamp(2.4rem,6vw,5rem) 0 clamp(2.8rem,6vw,4.5rem)}
-  .hero .eyebrow{color:#f3d9a8}
-  .hero h1{
-    font-size:clamp(2.5rem,6.2vw,5rem);font-weight:500;
-    text-shadow:0 2px 30px rgba(0,0,0,.35);max-width:16ch;
-  }
-  .hero h1 em{font-style:italic;color:#f6e2bd}
-  .hero .tagline{
-    margin-top:1.2rem;max-width:40ch;font-size:clamp(1.05rem,1.6vw,1.3rem);
-    font-weight:400;text-shadow:0 2px 18px rgba(0,0,0,.4);color:#f3efe6;
-  }
-  .hero-cta{margin-top:1.9rem;display:flex;gap:.9rem;flex-wrap:wrap}
-
-  .btn{
-    --bg:var(--terracotta);--fg:#fff;
-    display:inline-flex;align-items:center;gap:.5rem;
-    background:var(--bg);color:var(--fg);
-    padding:.85em 1.5em;border-radius:999px;
-    font-weight:700;font-size:.98rem;text-decoration:none;
-    border:1.5px solid transparent;
-    transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
-    box-shadow:0 10px 24px -12px rgba(0,0,0,.5);
-  }
-  .btn:hover{transform:translateY(-2px);background:var(--terracotta-dark)}
-  .btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.65);box-shadow:none}
-  .btn--ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
-  .btn--outline{background:transparent;color:var(--terracotta);border-color:var(--terracotta);box-shadow:none}
-  .btn--outline:hover{background:var(--terracotta);color:#fff}
-  .btn--lg{padding:1em 1.9em;font-size:1.05rem}
-
-  /* ---------- PILIERS ---------- */
-  .pillars{background:var(--sand);border-bottom:1px solid var(--line)}
-  .pillars-inner{padding:clamp(2.2rem,5vw,3.2rem) 0}
-  .pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
-  .pillar{text-align:center;padding:0 .4rem}
-  .pillar .e{font-size:1.9rem;display:block;margin-bottom:.55rem;line-height:1}
-  .pillar p{font-size:.98rem;color:var(--moss-deep);font-weight:600;line-height:1.4}
-  .pillar p b{color:var(--terracotta-dark)}
-  @media (max-width:760px){.pillars-grid{grid-template-columns:1fr 1fr;gap:1.6rem 1.1rem}}
-
-  /* ---------- SECTIONS ---------- */
-  section{padding:clamp(3.5rem,8vw,6.5rem) 0}
-  .lead{font-size:clamp(1.15rem,2vw,1.45rem);font-family:"Fraunces",serif;font-weight:400;color:var(--moss-deep);line-height:1.45}
-  .section-title{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:1.4rem}
-  .text-center{text-align:center}
-  p + p{margin-top:1.1rem}
-
-  .invite{background:var(--cream)}
-  .invite p{color:var(--ink-soft)}
-
-  /* Bandeau "appel au changement" */
-  .call{background:var(--moss-deep);color:#f1efe6;text-align:center;position:relative;overflow:hidden}
-  .call::before{
-    content:"";position:absolute;inset:0;opacity:.10;
-    background:radial-gradient(circle at 20% 20%,#fff,transparent 45%),radial-gradient(circle at 85% 70%,var(--gold),transparent 50%);
-  }
-  .call .eyebrow{color:var(--gold)}
-  .call h2{font-size:clamp(1.7rem,3.2vw,2.5rem);max-width:18ch;margin-inline:auto}
-  .call .passages{
-    margin-top:2.2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;
-  }
-  .passages span{
-    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
-    padding:.6em 1.2em;border-radius:999px;font-size:.98rem;font-weight:500;
-    backdrop-filter:blur(2px);
-  }
-  .call .seed{margin-top:2.4rem;font-family:"Fraunces",serif;font-size:clamp(1.15rem,2vw,1.4rem);
-    line-height:1.5;max-width:34ch;margin-inline:auto;color:#fbf7ee}
-
-  /* ---------- PROGRAMME ---------- */
-  .programme{background:var(--cream)}
-  .prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);margin-top:2.6rem;align-items:start}
-  .prog-col h3{font-family:"Fraunces",serif;font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--moss-deep);margin-bottom:1.2rem}
-  .prog-list{list-style:none;display:flex;flex-direction:column;gap:.85rem}
-  .prog-list li{
-    display:flex;gap:.85rem;align-items:flex-start;
-    background:#fff;border:1px solid var(--line);border-radius:14px;
-    padding:.95rem 1.15rem;box-shadow:0 12px 32px -26px rgba(63,55,40,.55);
-  }
-  .prog-list .e{font-size:1.35rem;line-height:1.3;flex:none}
-  .prog-closing{margin:2.8rem auto 0;max-width:52ch;text-align:center;color:var(--ink-soft)}
-
-  /* ---------- LIEU ---------- */
-  .lieu{background:var(--sand)}
-  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
-  .split .media{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
-  .split .media img{width:100%;height:100%;object-fit:cover}
-  .lieu h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:1rem}
-  .lieu p{color:var(--ink-soft)}
-  .lieu .place{font-family:"Fraunces",serif;font-size:1.25rem;color:var(--moss-deep);margin-top:.4rem}
-
-  /* ---------- ANIMATEURS ---------- */
-  .team{background:var(--cream)}
-  .cards{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem,3.5vw,2.6rem);margin-top:2.6rem}
-  .person{
-    background:#fff;border:1px solid var(--line);border-radius:var(--r);
-    overflow:hidden;box-shadow:0 14px 40px -26px rgba(63,55,40,.5);
-    display:flex;flex-direction:column;
-  }
-  .person .photo{aspect-ratio:1/1;overflow:hidden;background:var(--sand)}
-  .person .photo img{width:100%;height:100%;object-fit:cover}
-  .person .body{padding:1.5rem 1.6rem 1.8rem}
-  .person h3{font-size:1.5rem;margin-bottom:.15rem}
-  .person .role{color:var(--terracotta);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.8rem}
-  .person p{color:var(--ink-soft);font-size:.98rem}
-
-  /* ---------- INFOS PRATIQUES ---------- */
-  .infos{background:var(--moss);color:#f4f1e8}
-  .infos .section-title{color:#fff}
-  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.2rem;margin-top:2.4rem}
-  .info-card{
-    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
-    border-radius:var(--r);padding:1.5rem 1.4rem;
-  }
-  .info-card .ico{font-size:1.6rem;line-height:1;margin-bottom:.7rem}
-  .info-card h3{font-size:1.05rem;color:#fff;font-family:"Nunito Sans",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.4rem}
-  .info-card p{font-size:1.05rem;color:#f4f1e8}
-
-  .tbd{
-    display:inline-block;background:rgba(255,234,170,.22);
-    border-bottom:2px dotted var(--gold);
-    padding:0 .35em;border-radius:4px;font-style:italic;color:#fbf2dc;
-  }
-
-  /* ---------- CONTACT ---------- */
-  .contact{background:var(--sand);text-align:center}
-  .contact .section-title{margin-bottom:.6rem}
-  .contact .lead{max-width:30ch;margin:.4rem auto 0;color:var(--ink-soft)}
-  .contact-card{
-    margin:2.6rem auto 0;max-width:560px;background:#fff;
-    border:1px solid var(--line);border-radius:var(--r);
-    box-shadow:var(--shadow);padding:clamp(2rem,5vw,3rem);
-  }
-  .contact-card .who{font-family:"Fraunces",serif;font-size:1.5rem;color:var(--moss-deep)}
-  .contact-card .brand{color:var(--terracotta);font-weight:700;letter-spacing:.04em;margin-bottom:1.8rem}
-  .contact-actions{display:flex;flex-direction:column;gap:.8rem;max-width:340px;margin:0 auto}
-  .contact-actions .btn{justify-content:center;width:100%}
-  .contact-actions .btn--mail{--bg:var(--moss-deep)}
-  .contact-actions .btn--mail:hover{background:#2f3729}
-  .contact-note{margin-top:1.6rem;font-size:.92rem;color:var(--ink-soft)}
-
-  /* ---------- FOOTER ---------- */
-  footer{background:var(--moss-deep);color:#d8d6c9;text-align:center;padding:3rem 0 2.4rem}
-  footer .logo{font-family:"Fraunces",serif;font-size:1.4rem;color:#fff;margin-bottom:.5rem}
-  footer a{color:#f3d9a8;text-decoration:none}
-  footer a:hover{text-decoration:underline}
-  footer .fine{margin-top:1.2rem;font-size:.82rem;color:rgba(216,214,201,.6)}
-
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-  .reveal.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
-
-  /* ---------- RESPONSIVE ---------- */
-  @media (max-width:760px){
-    .split{grid-template-columns:1fr}
-    .split .media{order:-1}
-    .cards{grid-template-columns:1fr}
-    .hero{min-height:88svh}
-    .hero-cta{flex-direction:column;align-items:stretch}
-    .hero-cta .btn{justify-content:center}
-  }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
-<body>
 
-<!-- ===================== HERO ===================== -->
-<header class="hero">
-  <div class="hero-inner wrap">
-    <span class="eyebrow">Week-end résidentiel · 18-20 septembre 2026 · Drôme</span>
-    <h1>« Faire son <em>sacré chemin</em> »</h1>
-    <p class="tagline">Sur les pas de son héros intérieur — pour traverser un cap de vie et te reconnecter à ton élan.</p>
-    <div class="hero-cta">
-      <a class="btn btn--lg" href="#contact">Je veux en savoir plus</a>
-      <a class="btn btn--ghost btn--lg" href="#lieu">Découvrir le lieu</a>
-    </div>
-  </div>
+<body data-hero="c">
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="INTER &amp; SENS — accueil">
+    <img src="assets/logo-intersens.png" alt="INTER &amp; SENS">
+    <span class="sep"></span>
+    <span class="ctx">Stage<br>Faire son sacré chemin</span>
+  </a>
+  <nav class="site-nav">
+    <span class="nav-links">
+      <a href="#invitation">L'invitation</a>
+      <a href="#programme">Le week-end</a>
+      <a href="#infos">Infos pratiques</a>
+      <a href="#animateurs">Qui sommes-nous</a>
+    </span>
+    <a class="btn btn-primary" href="#contact">Réserver ma place</a>
+  </nav>
 </header>
 
-<!-- ===================== PILIERS ===================== -->
-<section class="pillars">
-  <div class="wrap pillars-inner pillars-grid reveal">
-    <div class="pillar"><span class="e">🌀</span><p><b>Oser</b> la Transformation</p></div>
-    <div class="pillar"><span class="e">🌟</span><p>Marcher, Danser, Chanter&nbsp;: avec <b>Élan &amp; Confiance</b></p></div>
-    <div class="pillar"><span class="e">🌱</span><p>Déployer sa <b>Puissance</b> &amp; son <b>Alignement</b></p></div>
-    <div class="pillar"><span class="e">✨</span><p>Nourrir la <b>Joie intérieure</b></p></div>
+<main id="top" class="hero-stage">
+
+  <!-- ===================== HERO — Sentier ===================== -->
+  <section class="hero hero--c">
+    <div class="bg" aria-hidden="true"></div>
+    <svg class="path" viewBox="0 0 560 380" fill="none" aria-hidden="true">
+      <path d="M40 360 C 160 300, 60 230, 200 200 S 360 150, 300 100 S 440 60, 520 30" stroke="#F6C98A" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.85"></path>
+      <circle cx="520" cy="30" r="9" fill="#F6C98A"></circle>
+    </svg>
+    <div class="wrap top">
+      <p class="eyebrow"><span class="star" aria-hidden="true">✦</span> Stage · Drôme · septembre 2026</p>
+      <h1 class="hero-title">Faire son sacré chemin</h1>
+      <p class="hero-sub">sur les pas de son héros intérieur</p>
+    </div>
+    <div class="wrap" style="display:flex; flex-direction:column; flex:1;">
+      <div class="info-card">
+        <div class="row"><span class="k">Quand</span><span class="v">Du vendredi 18 (arrivée à 14h) au dimanche 20 septembre 2026</span></div>
+        <div class="row"><span class="k">Où</span><span class="v">Le Chant du Loup — près de Die, dans la Drôme</span></div>
+        <div class="row"><span class="k">Avec</span><span class="v">Julie Zimmermann &amp; Julien Jeanne</span></div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Réserver ma place</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== ESSENCE (bandeau du slide) ===================== -->
+<section class="essence" aria-label="L'essence du week-end">
+  <div class="wrap essence-grid">
+    <div class="es-item">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c0-2 1.6-3.6 3.6-3.6S19 10 19 12.4 16.8 16 14 16s-5-2.2-5-5 2.4-5.6 5.6-5.6S21 7.8 21 11.6"></path><path d="M12 12c0 1.4-1.1 2.5-2.6 2.5S7 13.4 7 11.8 8.4 9 10 9"></path></svg></span>
+      <p>Oser la <strong>Transformation</strong></p>
+    </div>
+    <div class="es-item">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5.4 5.9.7-4.4 4 1.2 5.8L12 21l-5.2 1.9 1.2-5.8-4.4-4 5.9-.7z"></path></svg></span>
+      <p>Marcher, Danser, Chanter — avec <strong>Élan &amp; Confiance</strong></p>
+    </div>
+    <div class="es-item">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"></path><path d="M12 13c0-3.5 2.4-6 6.5-6 0 4.2-2.8 6-6.5 6z"></path><path d="M12 16c0-2.8-2-4.5-5.5-4.5 0 3.2 2.3 4.5 5.5 4.5z"></path></svg></span>
+      <p>Déployer sa <strong>Puissance &amp; son Alignement</strong></p>
+    </div>
+    <div class="es-item">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l1.6 3.6L17 9l-3.4 1.4L12 14l-1.6-3.6L7 9l3.4-1.4z"></path><path d="M18 14l.8 1.8L21 17l-2.2.9L18 20l-.8-2.1L15 17l2.2-1.2z"></path></svg></span>
+      <p>Nourrir la <strong>Joie intérieure</strong></p>
+    </div>
   </div>
 </section>
 
 <!-- ===================== INVITATION ===================== -->
-<section class="invite">
-  <div class="narrow text-center reveal">
-    <span class="eyebrow">L'invitation</span>
-    <p class="lead">Après une première édition en 2025 riche en profondeur, en rencontres et en transformations, nous vous invitons cette année à vivre une nouvelle traversée, au cœur de vous-même.</p>
-    <p style="margin-top:1.6rem">Un temps suspendu, en pleine nature, pour déposer ce qui pèse, écouter ce qui appelle, et oser un pas vers la vie qui vous ressemble.</p>
+<section class="block invite" id="invitation">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="lead-quote">« Il y a des moments dans la vie où quelque chose appelle au changement… »</p>
+    </div>
+    <div class="cols reveal">
+      <div>
+        <p>Un passage à franchir. Une peur à traverser. Une nouvelle manière d'être à oser.</p>
+        <p>Ce stage est une invitation à <strong>semer en soi les graines du renouveau</strong>, à être accompagné·e pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus authentique, plus libre et plus vivante.</p>
+        <p>Après une première édition en 2025 riche en profondeur, en rencontres et en transformations, nous t'invitons cette année à vivre une nouvelle traversée, au cœur de toi-même.</p>
+      </div>
+      <aside class="aside">
+        <span class="badge">Édition 2026</span>
+        <h4>Une nouvelle traversée</h4>
+        <p>Un espace soutenant, vivant et profondément humain pour ralentir, ressentir, déposer… et repartir avec plus de confiance, de vérité et d'élan.</p>
+      </aside>
+    </div>
   </div>
 </section>
 
-<!-- ===================== APPEL AU CHANGEMENT ===================== -->
-<section class="call">
-  <div class="narrow reveal" style="position:relative">
-    <span class="eyebrow">Pour qui ?</span>
-    <h2>Il y a des moments dans la vie où quelque chose appelle au changement…</h2>
-    <div class="passages">
-      <span>Un passage à franchir</span>
-      <span>Une peur à traverser</span>
-      <span>Une nouvelle manière d'être à oser</span>
+<!-- ===================== PENDANT CE WEEK-END (5 points — texte de Julie) ===================== -->
+<section class="block intentions" id="programme">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="rule"></span>
+      <p class="eyebrow" style="margin-top:16px;">Pendant ce week-end</p>
+      <h2>Ce que nous vous proposons de vivre</h2>
     </div>
-    <p class="seed">Ce stage est une invitation à semer en soi les graines du renouveau&nbsp;: être accompagné·e pour passer un cap, vivre de nouvelles expériences et s'approcher d'une vie plus authentique, plus libre et plus vivante.</p>
+    <div class="grid">
+      <article class="icard reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="4"></circle><path d="M12 3v2M12 21v-1M4.2 5.2l1.4 1.4M18.4 18.4l1.4 1.4M3 13h2M19 13h2M4.2 20.8l1.4-1.4M18.4 7.6l1.4-1.4"></path></svg></div>
+        <h3>Mettre de la clarté sur ce qui cherche à émerger en vous</h3>
+      </article>
+      <article class="icard reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c0 4-4 5-4 9a4 4 0 0 0 8 0c0-2-1-3-1-3 0 1.5-1 2-1 2 .5-3-2-5-2-8z"></path><path d="M12 21a6 6 0 0 0 6-6"></path></svg></div>
+        <h3>Oser traverser les freins, les peurs ou les doutes du moment</h3>
+      </article>
+      <article class="icard reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-7"></path><path d="M12 14c0-3 2-5 6-5 0 4-3 5-6 5z"></path><path d="M12 16c0-3-2-4-5-4 0 3 2 4 5 4z"></path></svg></div>
+        <h3>Vivre de nouvelles expériences pour ouvrir d'autres possibles</h3>
+      </article>
+      <article class="icard span2 reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c3 0 4-3 7-3s4 2 7-1"></path><path d="M14 6l3-3 3 3M17 3v8"></path></svg></div>
+        <h3>Retrouver votre élan et prendre votre juste place</h3>
+      </article>
+      <article class="icard reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20c-1.5 0-2.5-1-2.5-2.5S6.5 14 7 12.5 8 10 9.5 10s2 1.2 1.7 2.7S9.5 20 8 20z"></path><path d="M16 14c1.5 0 2.5-1 2.5-2.5S17.5 8 17 6.5 16 4 14.5 4s-2 1.2-1.7 2.7S14.5 14 16 14z"></path></svg></div>
+        <h3>Poser des pas concrets vers une vie plus alignée</h3>
+      </article>
+    </div>
   </div>
 </section>
 
-<!-- ===================== PROGRAMME ===================== -->
-<section class="programme">
-  <div class="wrap text-center reveal">
-    <span class="eyebrow">Pendant ce week-end</span>
-    <h2 class="section-title">Un chemin à vivre, ensemble</h2>
-  </div>
-  <div class="wrap prog-grid reveal">
-    <div class="prog-col">
-      <h3>Nous vous proposons de…</h3>
-      <ul class="prog-list">
-        <li><span class="e">🌀</span><span>Mettre de la clarté sur ce qui cherche à émerger en vous</span></li>
-        <li><span class="e">🔥</span><span>Oser traverser les freins, les peurs ou les doutes du moment</span></li>
-        <li><span class="e">🌱</span><span>Vivre de nouvelles expériences pour ouvrir d'autres possibles</span></li>
-        <li><span class="e">🌟</span><span>Retrouver votre élan et prendre votre juste place</span></li>
-        <li><span class="e">✨</span><span>Poser des pas concrets vers une vie plus alignée</span></li>
-      </ul>
+<!-- ===================== À TRAVERS ===================== -->
+<section class="block through">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="rule"></span>
+      <p class="eyebrow" style="margin-top:16px;">À travers</p>
+      <h2>Une approche sensible &amp; incarnée</h2>
     </div>
-    <div class="prog-col">
-      <h3>À travers…</h3>
-      <ul class="prog-list">
-        <li><span class="e">🎨</span><span>Ateliers expérientiels et accompagnement en mouvement</span></li>
-        <li><span class="e">🗣️</span><span>Cercles de parole, temps de partage, chants et danse</span></li>
-        <li><span class="e">🎭</span><span>Approches créatives, sensibles et corporelles</span></li>
-        <li><span class="e">🧘</span><span>Temps de présence, d'intégration et de ressourcement</span></li>
-      </ul>
+    <div class="grid reveal">
+      <div class="row">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="2.2"></circle><path d="M12 8.5v6M12 11l-4 3M12 11l4 3M9 20l3-3 3 3"></path></svg></div>
+        <div>
+          <h3>Ateliers expérientiels</h3>
+          <p>Et accompagnement en mouvement, pour explorer par le corps autant que par les mots.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="12" r="8.2" stroke-dasharray="2 4"></circle><circle cx="20" cy="12" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="4" cy="12" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="12" cy="4" r="1.2" fill="currentColor" stroke="none"></circle><circle cx="12" cy="20" r="1.2" fill="currentColor" stroke="none"></circle></svg></div>
+        <div>
+          <h3>Cercles de parole, chants &amp; danse</h3>
+          <p>Temps de partage où la voix et le corps prennent leur juste place.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c5-1 8-5 8-10 0-2-1-4-3-4-1.5 0-2.5 1-3 2.5C13 7 12 3 9 3 6.5 3 5 5 5 7.5 5 13 8 18 12 21z"></path></svg></div>
+        <div>
+          <h3>Approches créatives &amp; corporelles</h3>
+          <p>Des chemins sensibles pour donner forme à ce qui cherche à émerger.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"></path><path d="M3 18c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2"></path><circle cx="12" cy="6" r="2.4"></circle></svg></div>
+        <div>
+          <h3>Présence, intégration &amp; ressourcement</h3>
+          <p>Des temps pour ralentir, intégrer et se ressourcer en pleine nature.</p>
+        </div>
+      </div>
     </div>
+    <p class="closing reveal">Ralentir, ressentir, déposer… et repartir avec plus de confiance, de vérité et d'élan.</p>
   </div>
-  <p class="prog-closing lead narrow reveal">Un espace soutenant, vivant et profondément humain pour ralentir, ressentir, déposer… et repartir avec plus de confiance, de vérité et d'élan.</p>
 </section>
 
-<!-- ===================== LE LIEU ===================== -->
-<section class="lieu" id="lieu">
-  <div class="wrap split reveal">
-    <div class="text">
-      <span class="eyebrow">Le lieu</span>
-      <h2>Un écrin de verdure près de Die, dans la Drôme</h2>
-      <p class="place">Gîtes Le Chant du Loup — à 4 km de Die (Drôme)</p>
-      <p style="margin-top:.3rem;color:var(--ink-soft)">2045 Chemin de Chapias, 26150 Die</p>
-      <p style="margin-top:1rem">En résidentiel, au cœur d'une nature préservée, entre montagnes et grands espaces, propice au ressourcement et à la traversée intérieure. Une mare naturelle, le silence, la lumière&nbsp;: tout y invite à ralentir.</p>
-      <p style="margin-top:1.4rem;display:flex;gap:.7rem;flex-wrap:wrap">
-        <a class="btn" href="https://www.gites-lechantduloup.com" target="_blank" rel="noopener">Visiter le gîte ↗</a>
-        <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&amp;query=2045%20Chemin%20de%20Chapias%2026150%20Die" target="_blank" rel="noopener">Itinéraire ↗</a>
-      </p>
+<!-- ===================== INFOS PRATIQUES ===================== -->
+<section class="block practical" id="infos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="rule"></span>
+      <p class="eyebrow" style="margin-top:16px;">Le cadre</p>
+      <h2>Quand &amp; où</h2>
     </div>
-    <div class="media">
-      <img src="assets/paysage-mare.jpg" alt="La mare naturelle du gîte Le Chant du Loup, avec vue sur les montagnes de la Drôme" loading="lazy">
+    <div class="grid">
+      <div class="pcard reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 3v4M16 3v4"></path></svg></div>
+        <div class="k">Quand</div>
+        <h3>Du 18 au 20 septembre 2026</h3>
+        <p>Du vendredi 18 septembre — <span class="pin">arrivée à 14h</span> pour profiter du lieu — au dimanche 20 septembre.</p>
+      </div>
+      <div class="pcard reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></div>
+        <div class="k">Où</div>
+        <h3>Au Chant du Loup, près de Die</h3>
+        <p>Un écrin de nature à 10 min de Die, au pied du Parc Naturel Régional du Vercors, dans la <span class="pin">Drôme</span>.</p>
+      </div>
+      <div class="pcard lieu reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11"></path><path d="M9 21v-6h6v6"></path><path d="M3 21h18"></path></svg></div>
+        <div class="k">Le lieu</div>
+        <h3>Le Chant du Loup</h3>
+        <p>Un gîte de charme dédié à l'accueil de stages, en harmonie avec la nature : alimentation saine et bio, salle de pratique dédiée et grands espaces pour se ressourcer. Un cadre simple, vivant et apaisant pour vivre cette traversée.</p>
+        <ul class="lieu-meta">
+          <li><span class="lm-k">Adresse</span>2045 Chemin de Chapias, 26150 Die</li>
+          <li><span class="lm-k">Le site</span><a href="https://www.gites-lechantduloup.com/" target="_blank" rel="noopener">gites-lechantduloup.com</a></li>
+          <li><span class="lm-k">Itinéraire</span><a href="https://www.google.com/maps/search/?api=1&amp;query=2045%20Chemin%20de%20Chapias%2026150%20Die" target="_blank" rel="noopener">Voir sur la carte</a></li>
+        </ul>
+        <a class="btn btn-ghost" href="https://www.gites-lechantduloup.com/" target="_blank" rel="noopener">Découvrir le gîte</a>
+      </div>
+      <p class="note">Tarif, hébergement et détails pratiques communiqués sur demande — contactez-nous ci-dessous.</p>
     </div>
   </div>
 </section>
 
 <!-- ===================== ANIMATEURS ===================== -->
-<section class="team">
-  <div class="wrap text-center reveal">
-    <span class="eyebrow">Qui vous accompagne</span>
-    <h2 class="section-title">Celles et ceux qui tiennent le cap avec vous</h2>
-  </div>
-  <div class="wrap cards">
-    <article class="person reveal">
-      <div class="photo"><img src="assets/Julie.jpg" alt="Julie Zimmermann" loading="lazy"></div>
-      <div class="body">
-        <h3>Julie Zimmermann</h3>
-        <div class="role">Intérêt Sens · Accompagnante</div>
-        <p>Passionnée par le cheminement intérieur et l'élan de vie, Julie crée des espaces de confiance pour traverser les caps et révéler ce qui demande à naître en chacun·e.</p>
-      </div>
-    </article>
-    <article class="person reveal">
-      <div class="photo"><img src="assets/julien-fils.jpg" alt="Julien Jeanne" loading="lazy"></div>
-      <div class="body">
-        <h3>Julien Jeanne</h3>
-        <div class="role">Artiste chorégraphique · Artisan du vivant</div>
-        <p>Ami de longue date et passionné de transmission, Julien met le mouvement, le corps et le vivant au service de la transformation. 🌿</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ===================== INFOS PRATIQUES ===================== -->
-<section class="infos">
-  <div class="wrap text-center reveal">
-    <span class="eyebrow" style="color:#f3d9a8">Infos pratiques</span>
-    <h2 class="section-title">L'essentiel en un coup d'œil</h2>
-  </div>
-  <div class="wrap info-grid reveal">
-    <div class="info-card">
-      <div class="ico">📅</div>
-      <h3>Quand</h3>
-      <p>Ven. 18 → dim. 20 septembre 2026<br><span style="opacity:.85;font-size:.92rem">Arrivée le vendredi dès 14h</span></p>
+<section class="block facils" id="animateurs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="rule"></span>
+      <p class="eyebrow" style="margin-top:16px;">Qui sommes-nous</p>
+      <h2>Deux co-facilitateurs passionnés</h2>
     </div>
-    <div class="info-card">
-      <div class="ico">📍</div>
-      <h3>Où</h3>
-      <p>Gîtes Le Chant du Loup<br><span style="opacity:.85;font-size:.92rem">2045 Chemin de Chapias, 26150 Die</span></p>
-    </div>
-    <div class="info-card">
-      <div class="ico">🛏️</div>
-      <h3>Format</h3>
-      <p>Week-end résidentiel<br><span style="opacity:.85;font-size:.92rem">hébergement &amp; repas sur place</span></p>
-    </div>
-    <div class="info-card">
-      <div class="ico">💛</div>
-      <h3>Tarif</h3>
-      <p>Sur demande<br><span style="opacity:.85;font-size:.92rem">précisé lors du contact</span></p>
+    <div class="grid">
+      <article class="facil reveal">
+        <div class="ph"><img src="assets/julie-portrait.jpg" alt="Julie Zimmermann"></div>
+        <div class="name">Julie Zimmermann</div>
+        <div class="role">Facilitatrice · INTER &amp; SENS</div>
+        <p>Passionnée par la transformation et l'accompagnement du vivant, Julie crée des espaces où l'on ose se rencontrer vraiment. Elle guide chacun·e vers plus de clarté, de confiance et d'élan, avec chaleur et profondeur.</p>
+      </article>
+      <article class="facil reveal">
+        <div class="ph"><img src="assets/julien-fils.jpg" alt="Julien Jeanne"></div>
+        <div class="name">Julien Jeanne</div>
+        <div class="role">Artiste chorégraphique · artisan du vivant</div>
+        <p>Ami de longue date, artiste chorégraphique, artisan du vivant et passionné de transmission, Julien invite le corps et le mouvement comme chemins d'expression et de libération.</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- ===================== CONTACT ===================== -->
-<section class="contact" id="contact">
-  <div class="narrow reveal">
-    <span class="eyebrow">Si cet appel résonne en vous</span>
-    <h2 class="section-title">Réserver votre place</h2>
-    <p class="lead">Pas de formulaire&nbsp;: pour préserver le lien et répondre à vos questions, contactez Julie directement. Le téléphone reste le plus simple.</p>
-
-    <div class="contact-card">
-      <div class="who">Julie Zimmermann</div>
-      <div class="brand">Intérêt Sens</div>
-      <div class="contact-actions">
-        <a class="btn btn--lg" href="tel:+33633812462">📞 06 33 81 24 62</a>
-        <a class="btn btn--mail btn--lg" href="mailto:julie.zimmermann@interetsens.com?subject=Stage%20%C2%AB%20Faire%20son%20sacr%C3%A9%20chemin%20%C2%BB%20-%20septembre%202026">✉️ julie.zimmermann@interetsens.com</a>
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="rule"></span>
+        <p class="eyebrow" style="margin-top:16px;">Si cet appel résonne en vous</p>
+        <h2>Faisons connaissance</h2>
+        <p class="invite-line">Contactez-moi pour en savoir plus — et n'hésitez pas à partager autour de vous. 🙏</p>
+        <div class="direct">
+          <a href="tel:+33633812462">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l-1 4a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg></span>
+            <span><span class="lab">Téléphone</span><br><span class="val">06 33 81 24 62</span></span>
+          </a>
+          <a href="mailto:julie.zimmermann@interetsens.com?subject=Stage%20Faire%20son%20sacr%C3%A9%20chemin%20%E2%80%94%20septembre%202026">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
+            <span><span class="lab">Email</span><br><span class="val">julie.zimmermann@interetsens.com</span></span>
+          </a>
+        </div>
+        <div class="sign">
+          <div class="je">Je vous embrasse,</div>
+          <div class="nm">Julie</div>
+        </div>
       </div>
-      <p class="contact-note">Contactez-moi pour en savoir plus. 🙏 N'hésitez pas à partager autour de vous.<br><span style="font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:var(--moss-deep)">Je vous embrasse, Julie.</span></p>
+
+      <form class="cform reveal" id="contactForm">
+        <div class="f">
+          <label for="cf-name">Votre prénom</label>
+          <input id="cf-name" name="name" type="text" placeholder="Prénom" required>
+        </div>
+        <div class="f">
+          <label for="cf-email">Votre email</label>
+          <input id="cf-email" name="email" type="email" placeholder="vous@email.com" required>
+        </div>
+        <div class="f">
+          <label for="cf-msg">Votre message</label>
+          <textarea id="cf-msg" name="message" placeholder="Ce stage résonne en moi, j'aimerais en savoir plus…"></textarea>
+        </div>
+        <button class="btn btn-primary btn-lg" type="submit">Envoyer ma demande</button>
+        <p class="hint">Votre message ouvrira votre messagerie, pré-rempli pour Julie.</p>
+      </form>
     </div>
   </div>
 </section>
 
 <!-- ===================== FOOTER ===================== -->
-<footer>
-  <div class="wrap">
-    <div class="logo">🌿 Intérêt Sens</div>
-    <p>« Faire son sacré chemin » — sur les pas de son héros intérieur</p>
-    <p style="margin-top:.4rem"><a href="https://gites-lechantduloup.com" target="_blank" rel="noopener">Gîte Le Chant du Loup</a> · Drôme</p>
-    <p class="fine">Coanimé par Julie Zimmermann &amp; Julien Jeanne · 18-20 septembre 2026</p>
+<footer class="site-footer">
+  <div class="wrap inner">
+    <img src="assets/logo-intersens.png" alt="INTER &amp; SENS">
+    <div class="meta">
+      Stage « Faire son sacré chemin » · Drôme · 18 › 20 septembre 2026<br>
+      Coanimé par Julie Zimmermann &amp; Julien Jeanne · <a href="mailto:julie.zimmermann@interetsens.com">julie.zimmermann@interetsens.com</a>
+    </div>
+    <div class="meta meta-right">© INTER &amp; SENS<br><a href="https://www.interetsens.com" target="_blank" rel="noopener">www.interetsens.com</a></div>
   </div>
 </footer>
 
 <script>
   // Apparition douce au scroll
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Formulaire de contact → ouvre la messagerie pré-remplie (contact direct, sans serveur)
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = (document.getElementById('cf-name').value || '').trim();
+      const email = (document.getElementById('cf-email').value || '').trim();
+      const msg = (document.getElementById('cf-msg').value || '').trim();
+      const subject = 'Stage « Faire son sacré chemin » — septembre 2026';
+      const body =
+        'Bonjour Julie,\n\n' +
+        (msg ? msg + '\n\n' : 'Ce stage résonne en moi, j’aimerais en savoir plus.\n\n') +
+        '— ' + (name || '') + (email ? '\n' + email : '');
+      window.location.href = 'mailto:julie.zimmermann@interetsens.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+    });
+  }
 </script>
 </body>
 </html>
