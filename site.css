@@ -383,6 +383,11 @@ section.block { padding: clamp(52px, 7vh, 90px) 0; position: relative; }
 .contact .sign .je { font-family: var(--serif); font-style: italic; font-size: 22px; color: #F0DFC4; }
 .contact .sign .nm { font-family: var(--serif); font-size: 30px; color: #FBF6EC; margin-top: 2px; }
 
+/* Contact en colonne centrée (sans formulaire) */
+.contact .solo { max-width: 600px; margin-inline: auto; text-align: center; }
+.contact .solo .direct { max-width: 470px; margin: 26px auto 0; text-align: left; }
+.contact .solo .sign { text-align: center; }
+
 /* Form */
 .cform { background: rgba(251,246,236,.05); border: 1px solid rgba(251,246,236,.16); border-radius: 20px; padding: 30px; }
 .cform .f { margin-bottom: 18px; }
@@ -406,29 +411,6 @@ section.block { padding: clamp(52px, 7vh, 90px) 0; position: relative; }
 .site-footer .meta { font-size: 13px; line-height: 1.7; }
 .site-footer .meta-right { text-align: right; }
 .site-footer a { color: #F6C98A; text-decoration: none; }
-
-/* Sélecteur de version A/B/C (comparaison — retiré sur la version finale) */
-.vswitch {
-  position: fixed; right: 16px; bottom: 16px; z-index: 300;
-  display: inline-flex; align-items: center; gap: 3px;
-  background: rgba(40,30,22,.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  border: 1px solid rgba(251,246,236,.16); border-radius: 100px;
-  padding: 5px 7px 5px 13px; box-shadow: 0 14px 34px -16px rgba(0,0,0,.55);
-  font-family: var(--sans); line-height: 1;
-}
-.vswitch .lbl { font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: #C9BCA3; font-weight: 600; margin-right: 5px; }
-.vswitch a {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 29px; height: 29px; border-radius: 50%;
-  font-size: 13px; font-weight: 700; color: #F4EEDF; text-decoration: none;
-  transition: background .2s, color .2s;
-}
-.vswitch a:hover { background: rgba(251,246,236,.15); }
-.vswitch a[aria-current="page"] { background: var(--accent); color: #fff; }
-@media (max-width: 620px) {
-  .vswitch { right: 10px; bottom: 10px; padding: 4px 6px 4px 11px; }
-  .vswitch .lbl { display: none; }
-}
 
 /* Reveal on scroll */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }

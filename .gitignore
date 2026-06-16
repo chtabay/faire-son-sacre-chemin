@@ -8,6 +8,9 @@ interetsens/
 # Sources non destinées au web (HEIC non lisible par les navigateurs ; converti en .jpg)
 *.heic
 
+# Captures d'écran / images de référence de travail (les vraies photos du site sont en .jpg)
+*.jpeg
+
 # OS
 Thumbs.db
 .DS_Store

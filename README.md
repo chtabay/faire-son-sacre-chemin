@@ -10,29 +10,29 @@ Publié via **GitHub Pages** : https://chtabay.github.io/faire-son-sacre-chemin/
 
 ## 🎨 Design
 
-Mise en page alignée sur la maquette « **Sentier** » validée dans Claude Design
-(palette nature chaleureuse + accent orange Inter &amp; Sens, typographies Playfair Display / Cormorant / Inter).
+Page unique, mise en page « **Sentier** » (palette nature chaleureuse + accent orange Inter &amp; Sens,
+typographies Playfair Display / Cormorant / Inter).
 
 ```
-index.html        → la page (hero « Sentier »)
+index.html        → la page
 site.css          → design system (couleurs, typo, composants)
 assets/
   paysage-mare.jpg    → photo principale (la mare, vue sur la Drôme)
   julie-portrait.jpg  → portrait de Julie Zimmermann
-  julien-fils.jpg     → photo de Julien Jeanne
+  julien-portrait.jpg → portrait de Julien Jeanne
   logo-intersens.png  → logo Inter & Sens
 ```
 
-> Le dossier `interetsens/` (maquette d'origine exportée de Claude Design) n'est **pas** versionné
-> ni publié — il sert uniquement de référence locale.
+## 📞 Contact
 
-## ✏️ À compléter / valider
+Pas de formulaire : la prise de contact se fait **directement**, en cliquant sur le numéro
+(`tel:`) ou l'adresse e-mail (`mailto:`) de Julie. Aucun tarif n'est affiché (communiqué au contact).
 
-- **Tarif** : aucune mention de prix sur la page (retiré à la demande de Julie) — communiqué de vive voix au contact.
-- **Formulaire de contact** : la maquette inclut un petit formulaire qui ouvre la messagerie
-  pré-remplie (contact direct, sans serveur). Julie avait évoqué « pas de formulaire » :
-  il se retire facilement si elle préfère ne garder que le téléphone &amp; l'e-mail.
-- **Portrait solo de Julien** en `.jpg` si Julie en a un (actuellement : photo avec son fils).
+## ℹ️ Notes
+
+- Le dossier `interetsens/` (maquette d'origine Claude Design) et les fichiers `*.jpeg`
+  (captures / images de référence) ne sont **ni versionnés ni publiés** (cf. `.gitignore`).
+- Des variantes B et C avaient été explorées puis écartées : la **version A** a été retenue.
 
 ## 🛠️ Aperçu en local
 

@@ -249,44 +249,25 @@
 <!-- ===================== CONTACT ===================== -->
 <section class="block contact" id="contact">
   <div class="wrap">
-    <div class="grid">
-      <div class="reveal">
-        <span class="rule"></span>
-        <p class="eyebrow" style="margin-top:16px;">Si cet appel résonne en vous</p>
-        <h2>Faisons connaissance</h2>
-        <p class="invite-line">Contactez-moi pour en savoir plus — et n'hésitez pas à partager autour de vous. 🙏</p>
-        <div class="direct">
-          <a href="tel:+33633812462">
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l-1 4a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg></span>
-            <span><span class="lab">Téléphone</span><br><span class="val">06 33 81 24 62</span></span>
-          </a>
-          <a href="mailto:julie.zimmermann@interetsens.com?subject=Stage%20Faire%20son%20sacr%C3%A9%20chemin%20%E2%80%94%20septembre%202026">
-            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
-            <span><span class="lab">Email</span><br><span class="val">julie.zimmermann@interetsens.com</span></span>
-          </a>
-        </div>
-        <div class="sign">
-          <div class="je">Je vous embrasse,</div>
-          <div class="nm">Julie</div>
-        </div>
+    <div class="solo reveal">
+      <span class="rule"></span>
+      <p class="eyebrow" style="margin-top:16px;">Si cet appel résonne en vous</p>
+      <h2>Faisons connaissance</h2>
+      <p class="invite-line">Contactez-moi directement pour en savoir plus — par téléphone ou par mail. N'hésitez pas à partager autour de vous. 🙏</p>
+      <div class="direct">
+        <a href="tel:+33633812462">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l-1 4a2 2 0 0 1-2 2A14 14 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg></span>
+          <span><span class="lab">Téléphone</span><br><span class="val">06 33 81 24 62</span></span>
+        </a>
+        <a href="mailto:julie.zimmermann@interetsens.com?subject=Stage%20Faire%20son%20sacr%C3%A9%20chemin%20%E2%80%94%20septembre%202026">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
+          <span><span class="lab">Email</span><br><span class="val">julie.zimmermann@interetsens.com</span></span>
+        </a>
       </div>
-
-      <form class="cform reveal" id="contactForm">
-        <div class="f">
-          <label for="cf-name">Votre prénom</label>
-          <input id="cf-name" name="name" type="text" placeholder="Prénom" required>
-        </div>
-        <div class="f">
-          <label for="cf-email">Votre email</label>
-          <input id="cf-email" name="email" type="email" placeholder="vous@email.com" required>
-        </div>
-        <div class="f">
-          <label for="cf-msg">Votre message</label>
-          <textarea id="cf-msg" name="message" placeholder="Ce stage résonne en moi, j'aimerais en savoir plus…"></textarea>
-        </div>
-        <button class="btn btn-primary btn-lg" type="submit">Envoyer ma demande</button>
-        <p class="hint">Votre message ouvrira votre messagerie, pré-rempli pour Julie.</p>
-      </form>
+      <div class="sign">
+        <div class="je">Je vous embrasse,</div>
+        <div class="nm">Julie</div>
+      </div>
     </div>
   </div>
 </section>
@@ -303,38 +284,12 @@
   </div>
 </footer>
 
-<nav class="vswitch" aria-label="Versions de la page">
-  <span class="lbl">Version</span>
-  <a href="index.html" aria-current="page" title="A — aérée &amp; éditoriale">A</a>
-  <a href="b.html" title="B — dense &amp; directe">B</a>
-  <a href="c.html" title="C — DA affiche">C</a>
-</nav>
-
 <script>
   // Apparition douce au scroll
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // Formulaire de contact → ouvre la messagerie pré-remplie (contact direct, sans serveur)
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = (document.getElementById('cf-name').value || '').trim();
-      const email = (document.getElementById('cf-email').value || '').trim();
-      const msg = (document.getElementById('cf-msg').value || '').trim();
-      const subject = 'Stage « Faire son sacré chemin » — septembre 2026';
-      const body =
-        'Bonjour Julie,\n\n' +
-        (msg ? msg + '\n\n' : 'Ce stage résonne en moi, j’aimerais en savoir plus.\n\n') +
-        '— ' + (name || '') + (email ? '\n' + email : '');
-      window.location.href = 'mailto:julie.zimmermann@interetsens.com'
-        + '?subject=' + encodeURIComponent(subject)
-        + '&body=' + encodeURIComponent(body);
-    });
-  }
 </script>
 </body>
 </html>
